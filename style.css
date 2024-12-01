@@ -1,3 +1,11 @@
+.navbar-toggler-icon {
+    --bs-navbar-toggler-icon-bg: url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAzMCAzMCc+PHBhdGggc3Ryb2tlPSdyZ2JhKDI1NSwgMjU1LCAyNTUsIDAuNTUpJyBzdHJva2UtbGluZWNhcD0ncm91bmQnIHN0cm9rZS1taXRlcmxpbWl0PScxMCcgc3Ryb2tlLXdpZHRoPScyJyBkPSdNNCA3aDIyTTQgMTVoMjJNNCAyM2gyMicvPjwvc3ZnPg==);
+}
+
+.banner {
+    margin-left: -2px;
+}
+
 .highlights {
     color: #4fe3c8;
 }
@@ -35,7 +43,8 @@
 }
 
 .sfondorosa {
-    background-image: url(./Pictures/sfondorosa.svg);
+    background-image: url(./Pictures/Sfondo-Rosa.svg);
+    background-size: cover;
 }
 
 .link-green {
@@ -54,6 +63,27 @@
 .bi {
     color: white;
 }
+
+.servizi {
+    grid-area: 1 / 1 / 2 / 4;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    gap: 10px;
+}
+
+.card-text h3 {
+    white-space: nowrap;
+}
+
+@media (max-width: 995px) {
+    .features {
+      grid-template-columns: 1fr;
+      gap: 5px;
+    }
+  }
 
 .footer {
     padding-bottom: 100px;
