@@ -80,8 +80,8 @@
 
 @media (max-width: 995px) {
     .features {
-      grid-template-columns: 1fr;
-      gap: 5px;
+      display: flex;
+      flex-direction: column;
     }
   }
 
