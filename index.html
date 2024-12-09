@@ -24,9 +24,9 @@
     <nav class="navbar navbar-expand-lg" style="background-color: #618e86;" aria-label="Fifth navbar example">
         <div class="container-fluid">
             <div>
-                <img src="./Pictures/logo.png" alt="Logo Sarah Branchesi" class="mx-4" height="70">
+                <img src="./Pictures/logo.png" alt="Logo Sarah Branchesi" class="mx-4" style="background-color: rgb(255, 255, 255); padding: 5px; margin: 5px;" height="70">
             </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" style="border: 1px solid white;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
     
@@ -64,37 +64,39 @@
 </section>
 <!--END Header-->
 <!--Banner-->
-<div class="my-0">
-    <div><img src="./Pictures/Sarah_banner.svg" alt="" width="101%" class="banner">
+<section>
+    <div class="my-0">
+        <div><img src="./Pictures/Sarah_banner.svg" alt="" width="101%" class="banner"></div>
     </div>
-</div>
+</section>
 <!--END Banner-->
-    <!--Hero-->
-    <section id="hero" class="mt-5">
-        <div class="container hero1 col-xxl-12 px-5 py-3">
+<!--Hero-->
+<section>
+        <div class="container position-relative hero col-xxl-12 px-5 py-3 mt-5">
             <div class="row flex-lg-row align-items-center g-5 py-3">
                 <div class="col-lg-6">
-                    <h1 class="arapey-regular display-5 mb-3">CHI SONO</h1>
+                    <h1 class="arapey-regular mb-3">CHI SONO</h1>
                     <p class="noto-sans">Dieta significa "stile di vita" e uno stile di vita sano può migliorare il <span class="highlights">benessere</span> delle persone e la salute. Il mio obiettivo è quello di trovare una nuova <span class="highlights">armonia con il cibo</span>: creare un piano alimentare che possa essere seguito senza forzature, acquisendo un nuovo stile di vita ed un benessere completo, permettendo di sentirsi meglio con il proprio corpo. </p>
                     <p class="noto-sans">Partecipo costantemente a <span class="highlights"> corsi di formazione </span>per studiare la dieta più efficace e per essere sempre aggiornata sulle nuove ricerche in ambito di nutrizione. Sono specializzata in diete per le condizioni <span class="highlights">fisiologiche e patologiche</span>. Insegno l'alimentazione non solo come Nutrizionista, ma anche come Divulgatrice Scientifica attraverso i miei libri, conferenze ed attività didattiche in Istituti Scolastici e in festival scientifici su territorio nazionale. </p>
-                </div>
-                <div class="col-10 col-sm-8 col-lg-6">
-                    <img src="./Pictures/dieta-pesaro-fano-savignano-montecchio-vallefoglia-urbino.jpg" class="pic-sarah d-block mx-lg-auto mt-4 img-fluid" alt="Nutrizionista Sarah Branchesi" width="700" height="500" loading="lazy">
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-5">
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-2">
                         <button type="button" class="btn btn-sm px-4" style="background-color: #e3774f; color: white;">Leggi di più</button>
                     </div>
                 </div>
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="./Pictures/dieta-pesaro-fano-savignano-montecchio-vallefoglia-urbino.jpg" class="pic-sarah d-block mx-lg-auto mt-4 img-fluid" alt="Nutrizionista Sarah Branchesi" width="700" height="500" loading="lazy">
+                    
+                </div>
             </div>
         </div>
-    </section>
-    <!--END Hero-->
-    <!--Jumbotron-->
-    <section>
-        <div class="container sfondorosa mt-5" >
-            <div class="d-inline-block position-relative my-5 mx-5 text-start text-muted bg-transparent">
-                <div class="border pt-4">
-                    <h2 class="d-inline text-body-light arapey-regular ps-5 mt-4 me-0">PRENOTAZIONE VISITE</h2>
-                    <p class="col-lg-7 ms-5 me-0 mb-4 mt-4 noto-sans" style="color: #545454;">
+</section>
+<!--END Hero-->
+<!--Jumbotron-->
+<section>
+        <div class="container px-5 py-5 boxVisite sfondorosa mt-5" >
+            <div class="prenotazioneVisite text-muted bg-transparent">
+                <div class="border pt-3">
+                    <h2 class="d-flex text-body-light arapey-regular ms-2 me-2">PRENOTAZIONE VISITE</h2>
+                    <p class="col-lg-7 ms-2 me-0 mb-4 mt-4 noto-sans" style="color: #545454;">
                         Visite solo su appuntamento dal lunedì al venerdì. <br>
                         <br>
                         <span class="fw-bold">Per prenotazioni</span> <br>
@@ -109,10 +111,10 @@
                 </div>
             </div>
         </div>
-    </section>
-    <!--END Jumbotron-->
-    <!--Features-->
-    <section>
+</section>
+<!--END Jumbotron-->
+<!--Features-->
+<section>
         <div class="container features py-5 px-5 mt-5 my-5" id="custom-cards" style="background-color: #e8e8e4;">
             <h2 class="servizi arapey-regular" style="color: #618e86;">SERVIZI</h2>           
 
@@ -120,7 +122,7 @@
                     <div class="col">
                         <div class="card card-cover h-100 p-5 border overflow-hidden text-bg-dark shadow-lg" style="background-image: url('./Pictures/tipologie-di-dieta.jpg'); background-repeat: no-repeat; background-size: cover;">
                             <div class="card-text d-flex flex-column align-items-center justify-content-center h-100 text-white text-shadow-1 py-5">
-                                <h3 class="mb-0 lh-1 fw-light text-center" style="background-color: #54545480;">Tipi di Dieta</h3>
+                                <h3 class="noto-sans mb-0 fw-light text-center" style="background-color: #54545480;">Tipi di Dieta</h3>
                             </div>
                         </div>
                     </div>
@@ -130,7 +132,7 @@
                     <div class="col">
                         <div class="card card-cover h-100 p-5 border overflow-hidden text-bg-dark shadow-lg" style="background-image: url('./Pictures/visite-e-tariffario.jpg'); background-repeat: no-repeat; background-size: cover;">
                             <div class="card-text d-flex flex-column align-items-center h-100 text-white text-shadow-1 py-5 ">
-                                <h3 class="mb-0 lh-1 fw-light text-center" style="background-color: #54545480;">Visite e Tariffario</h3>
+                                <h3 class="mb-0 fw-light text-center" style="background-color: #54545480;">Visite e Tariffario</h3>
                             </div>
                         </div>
                     </div>
@@ -140,7 +142,7 @@
                     <div class="col">
                         <div class="card card-cover h-100 p-5 border overflow-hidden text-bg-dark shadow-lg" style="background-image: url('./Pictures/visite-online.jpg'); background-repeat: no-repeat; background-size: cover;">
                             <div class="card-text d-flex flex-column align-items-center h-100 text-white text-shadow-1 py-5">
-                                <h3 class="mb-0 lh-1 fw-light text-center" style="background-color: #54545480;">Visite Online</h3>
+                                <h3 class="mb-0 fw-light text-center" style="background-color: #54545480;">Visite Online</h3>
                             </div>
                         </div>
                     </div>
@@ -150,7 +152,7 @@
                     <div class="col">
                         <div class="card card-cover h-100 p-5 border overflow-hidden text-bg-dark shadow-lg" style="background-image: url('./Pictures/i-miei-libri.jpg'); background-repeat: no-repeat; background-size: cover;">
                             <div class="card-text d-flex flex-column align-items-center h-100 text-white text-shadow-1 py-5">
-                                <h3 class="mb-0 lh-1 fw-light text-center" style="background-color: #54545480;">I miei Libri</h3>
+                                <h3 class="mb-0 fw-light text-center" style="background-color: #54545480;">I miei Libri</h3>
                             </div>
                         </div>
                     </div>
@@ -160,7 +162,7 @@
                     <div class="col">
                         <div class="card card-cover h-100 p-5 border overflow-hidden text-bg-dark shadow-lg" style="background-image: url('./Pictures/collaborazioni.jpg'); background-repeat: no-repeat; background-size: cover;">
                             <div class="card-text d-flex flex-column align-items-center h-100 text-white text-shadow-1 py-5">
-                                <h3 class="mb-0 lh-1 fw-light text-center" style="background-color: #54545480;">Collaborazioni</h3>
+                                <h3 class="mb-0 fw-light text-center" style="background-color: #54545480;">Collaborazioni</h3>
                             </div>
                         </div>
                     </div>
@@ -170,32 +172,31 @@
                     <div class="col">
                         <div class="card card-cover h-100 p-5 border overflow-hidden text-bg-dark shadow-lg" style="background-image: url('./Pictures/domande-frequenti.jpg'); background-repeat: no-repeat; background-size: cover;">
                             <div class="card-text d-flex flex-column align-items-center h-100 text-white text-shadow-1 py-5">
-                                <h3 class="mb-0 lh-1 fw-light text-center" style="background-color: #54545480;">FAQ</h3>
+                                <h3 class="mb-0 fw-light text-center" style="background-color: #54545480;">FAQ</h3>
                             </div>
                         </div>
                     </div>
                 </a>
             
         </div>
-    </section>
-    <!--END Features-->
-    <!--Footer-->
-    <section style="background-color: #618e86">
+</section>
+<!--END Features-->
+<!--Footer-->
+<section style="background-color: #618e86">
         <div class="container footer mt-5">
-            <footer class="footer-item d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-                <div class="col-md-3 d-flex align-items-center">
-                    <span class="noto-sans mb-3 mb-md-0 text-body-light">© 2024 Sarah Branchesi</span>
+            <footer>
+                <div class="col-lg-3">
+                    <span class="lista noto-sans mb-3 mb-lg-0 text-body-light">© 2024 Sarah Branchesi</span>
                 </div>
 
-                <ul class="nav col-md-6 justify-content-center mb-4">
-                    <li class="nav-item"><a href="#" class="noto-sans px-2">Informazioni Legali</a></li>
-                    <li class="nav-item"><a href="#" class="noto-sans px-2">Privacy</a></li>
-                    <li class="nav-item"><a href="#" class="noto-sans px-2">Informativa sui Cookie</a></li>
-                    <li class="nav-item"><a href="#" class="noto-sans px-2">Sitemap</a></li>
+                <ul class=" lista info nav col-lg-6">
+                    <li class="nav-item no-padding"><a href="#" class=" noto-sans">Informazioni Legali</a></li>
+                    <li class="nav-item"><a href="#" class="noto-sans">Privacy</a></li>
+                    <li class="nav-item"><a href="#" class="noto-sans">Informativa sui Cookie</a></li>
                 </ul>
 
-                <ul class="nav col-md-3 justify-content-center align-items-center d-flex flex-nowrap">
-                    <li class="ms-3">
+                <ul class="social nav col-lg-3">
+                    <li class="no-padding ms-lg-3">
                         <a class="text-body-light" href="#">
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
                                 <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
@@ -227,8 +228,8 @@
 
             </footer>
         </div>
-    </section>
-    <!--END Footer-->
+</section>
+<!--END Footer-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

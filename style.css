@@ -1,16 +1,21 @@
+/* navbar */
 .navbar-toggler-icon {
     --bs-navbar-toggler-icon-bg: url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAzMCAzMCc+PHBhdGggc3Ryb2tlPSdyZ2JhKDI1NSwgMjU1LCAyNTUsIDAuNTUpJyBzdHJva2UtbGluZWNhcD0ncm91bmQnIHN0cm9rZS1taXRlcmxpbWl0PScxMCcgc3Ryb2tlLXdpZHRoPScyJyBkPSdNNCA3aDIyTTQgMTVoMjJNNCAyM2gyMicvPjwvc3ZnPg==);
 }
+/* END navbar */
 
+/* banner */
 .banner {
     margin-left: -2px;
 }
+/* END banner */
 
+/* hero */
 .highlights {
     color: #4fe3c8;
 }
 
-.hero1 {
+.hero {
     background-color: #618e86;
 }
 
@@ -18,30 +23,40 @@
     border: 11px solid white;
 }
 
-.arapey-regular {
-        font-family: "Arapey", serif;
-        font-weight: 100;
-        font-style: normal;
-        color: white;
-        letter-spacing: 10px;
-}
-
-.noto-sans {
-  font-family: "Noto Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-size: medium;
-  font-weight: medium;
-  font-style: normal;
-  text-decoration: none;
-  font-variation-settings:
-    "wdth" 100;
-    color: white;
-}
-
 .btn {
     background-color: #e3774f;
 }
 
+/* END hero */
+
+/* font */
+.arapey-regular {
+    font-family: "Arapey", serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 2em;
+    color: white;
+    letter-spacing: 0.4em;
+}
+
+.noto-sans {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: medium;
+    font-weight: medium;
+    font-style: normal;
+    text-decoration: none;
+    font-variation-settings:
+    "wdth" 100;
+    color: white;
+}
+
+h3 {
+    font-size: x-large!important;
+}
+/* END font */
+
+/* jumbotron */
 .sfondorosa {
     background-image: url(./Pictures/Sfondo-Rosa.svg);
     background-size: cover;
@@ -50,7 +65,9 @@
 .link-green {
     color: #618e86;
 }
+/* END jumbotron */
 
+/* features */
 .card-text {
     border: 10px solid white;
 }
@@ -77,14 +94,92 @@
 .card-text h3 {
     white-space: nowrap;
 }
+/* END features */
 
+/* footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 1em 100px 1em;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item {
+    padding-left: 1em;
+}
+/* END footer */
+
+/* media */
 @media (max-width: 995px) {
     .features {
       display: flex;
       flex-direction: column;
     }
-  }
 
-.footer {
-    padding-bottom: 100px;
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        padding-bottom: 10px;
+    }
+
+    .lista {
+        margin-top: 1em;
+    }
+
+    .no-padding {
+        padding-left: 0!important;
+        padding-right: 8px;
+    }
+
+    .social {
+        margin-top: 100px;
+    }
 }
+
+  @media (max-width: 480px) {
+    .prenotazioneVisite {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    .boxVisite {
+        padding-left: 48px;
+        padding-right: 48px;
+    }
+
+    .arapey-regular {
+        font-weight: 75;
+        font-size: 1.5em;
+        letter-spacing: 0.2em;
+    }
+    
+    .noto-sans {
+        font-size: small;
+        font-weight: light;
+        font-variation-settings:
+        "wdth" 75;
+    }
+
+    h3 {
+        font-size: medium!important;
+    }
+
+    .lista {
+        display: flex;
+        flex-direction: column;
+        align-items: start;        
+    }
+
+    .nav-item {
+        padding-left: 0!important;
+    }
+  }
+/* END media */
